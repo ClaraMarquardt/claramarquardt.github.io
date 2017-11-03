@@ -9,7 +9,8 @@ to take advantage of larger (well, wider) displays while still being capable of 
 scaling down to fit all manner of smaller ones.
 
 [-] Matt Taddy 
-http://taddylab.com/ | https://github.com/TaddyLab
+http://taddylab.com/ | https://github.com/TaddyLab | 
+https://www.chicagobooth.edu/faculty/directory/t/matt-taddy
 * CCA 3.0 license (https://github.com/TaddyLab/taddylab.github.io/blob/master/LICENSE)
 
 Other Credits:
