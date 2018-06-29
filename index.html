@@ -12,58 +12,53 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+
 	</head>
 	
-	<body class="homepage">
+	<body class="homepage" scroll="no" style="overflow: hidden">
 		<div id="page-wrapper">
 
+
 				<div id="header">
-						<div class="inner">
+
+						<div class="inner text_fade" style="opacity:0">
+
 							<header>
-								<h1><a href="index.html" id="logo">Clara Marquardt</a></h1><br>
-								<p><br>
-								Data + Machine Learning To Tackle Problems That Matter.
-							</header>
+								<h1><a  href="index.html" id="logo"></a>Clara Marquardt</h1><br>
+								<!-- <p> -->
+<!-- 								Data + Machine Learning To Tackle Problems That Matter.
+ -->							</header>
 							<footer>
 								email: marquardt.clara@gmail.com
 							</footer>
 						</div>
 
-						<nav id="nav2">
-							<ul class="menu">
-								<li>&nbsp;&nbsp;<a href="index.html" id="logo">Home</a></li> 
-								<li>
-								  <a href="index.html" target="blank" title="CV">CV</a></li></li> 
-								<li>
-								  <a href="./projects.html" title="Projects">Projects > Data Science<sup>+</sup> </a></li></li>
-								<li>
-								  <a href="./org.html" title="Projects+">Projects > Other</a></li>
-								<li>
-								  <a href="./publications.html" title="Publications">Publications</a></li>
-						</ul>
-						</nav>
+            <nav id="nav2">
+              <ul class="menu">
+                <li>&nbsp;&nbsp;<a href="index.html" id="logo">Home&nbsp;&nbsp;<i style="opacity:0" class="fa fa-caret-right"></i></a></li> 
+      
+
+            </ul>
+          </nav>
 				</div>
 
-				<section id="banner">
+				<div id="banner">
 					<header>
-						<p style="font-size:18px">
+						<p style="font-size:18px" >
 						<p>
-							<ul class="menu">
-							  <a href="index.html" target="blank" title="CV">CV&nbsp;<img src="./images/chicken.png" style="width:20px;height:20px;"/></a> </li>
-						   	  <li><a href="http://github.com/claramarquardt" target="blank" title="Github">GitHub <i class="fa fa-github"></i></a></li>
-						   	  <li> <a href="http://linkedin.com/in/claramarquardt/" target="blank" title="LinkedIn">LinkedIn <i class="fa fa-linkedin-square"></i></a></li>
-						   	  <li> <a href="https://twitter.com/ClaraMarquardt" target="blank" title="Twitter">Twitter <i class="fa fa-twitter"></i></a></li>
 
-							  </ul>
+			<ul class="menu text_fade" style="opacity:0">
+               <li> <a href="http://linkedin.com/in/claramarquardt/" target="blank" title="LinkedIn">LinkedIn <i class="fa fa-linkedin-square"></i></a></li>
+                <li><a href="http://github.com/claramarquardt" target="blank" title="Github">GitHub <i class="fa fa-github"></i></a></li>
+<!--                 <li> <a href="https://bl.ocks.org/claramarquardt" target="blank" title="Bl.ocks">Bl.ocks <i class="fa fa-th-large"></i></a></li>
+ -->                </ul>
 						</p>
 
 					</font>
 					</header>
-				</section>
-<!-- 				<section id="banner">
-					
-				</section>
- -->
+				</div>
+
 		<!-- Scripts -->
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/jquery.dropotron.min.js"></script>
@@ -72,6 +67,15 @@
 		<script src="assets/js/skel.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
+  		<script src="vis/main_vis.js" charset="utf-8"></script>
+		
+		<!-- Script Local -->
+		<script >
+
+    		$(".text_fade")
+               .animate({opacity:1}, 5000)
+		</script>
+
 
 	</body>
 </html>

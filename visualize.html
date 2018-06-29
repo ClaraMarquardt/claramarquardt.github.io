@@ -12,30 +12,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+
   </head>
   
-  <body class="no-sidebar">
+  <body class="no-sidebar" scroll="no" style="overflow: hidden">
     <div id="page-wrapper">
 
         <div id="header">
+            <div id="chart_header"></div>
+
             <div class="inner">
                 <header>
                 <h1>
-                <a href="org.html">Projects</h1><h3>Other</h3>
+                <a href="visualize.html">Visualizations</h1><h3><font style="opacity:0">xxx</font></h3></a>
               </header>
             </div>
 
             <nav id="nav2">
               <ul class="menu">
-                <li>&nbsp;&nbsp;<a href="index.html" id="logo">Home</a></li> 
-                <li>
-                  <a href="org.html" target="blank" title="CV">CV</a></li></li> 
-                <li>
-                  <a href="./projects.html" title="Projects">Projects > Data Science<sup>+</sup> </a></li></li>
-                <li>
-                  <a href="./org.html" title="Projects+">Projects > Other</a></li>
-                <li>
-                  <a href="./publications.html" title="Publications">Publications</a></li>
+                <li>&nbsp;&nbsp;<a href="index.html" id="logo">Home&nbsp;&nbsp;<i style="opacity:0.5" class="fa fa-caret-right"></i></a></li> 
+      
+
             </ul>
           </nav>
        </div>
@@ -46,7 +44,22 @@
 
               <section>
 
-              <p><p><h3>
+              Currently Undergoing Summer Maintainance ....
+
+
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+<!--               <p><p><h3>
               <strong>Startups</strong></h3></p>
 
               <p><p><img src="./images/papero.png" style="width:40px;height:40px;"/> 
@@ -74,24 +87,54 @@
               > <a href="http://www.camidc.org.uk/camidc-2013---the-movie.html" target="_blank"> Promotional Video</a> 
               
 
-          </p></section>
+          </p>--> 
+          </section> 
           
           <section id="banner">
           <header>
             <p style="font-size:18px">
             <p>
               <ul class="menu">
-                   <a href="org.html" target="blank" title="CV">CV&nbsp;<img src="./images/chicken.png" style="width:20px;height:20px;"/></a> </li>
-                  <li><a href="http://github.com/claramarquardt" target="blank" title="Github">GitHub <i class="fa fa-github"></i></a></li>
-                  <li> <a href="http://linkedin.com/in/claramarquardt/" target="blank" title="LinkedIn">LinkedIn <i class="fa fa-linkedin-square"></i></a></li>
-                 <li> <a href="https://twitter.com/ClaraMarquardt" target="blank" title="Twitter">Twitter <i class="fa fa-twitter"></i></a></li>
-
-                </ul>
+               <li> <a href="http://linkedin.com/in/claramarquardt/" target="blank" title="LinkedIn">LinkedIn <i class="fa fa-linkedin-square"></i></a></li>
+                <li><a href="http://github.com/claramarquardt" target="blank" title="Github">GitHub <i class="fa fa-github"></i></a></li>
+<!--                 <li> <a href="https://bl.ocks.org/claramarquardt" target="blank" title="Bl.ocks">Bl.ocks <i class="fa fa-th-large"></i></a></li>
+ -->                </ul>
             </p>
 
           </font>
           </header>
-        </section>
+       </section>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+
+    <script >
+
+        $("#logo").on({
+          mouseenter: function () {
+          $("#li1").remove()
+          $("#li2").remove()    
+          $("#li3").remove()
+
+        $("#nav2 ul").append("<li id='li1'>&nbsp;&nbsp;<a href='build.html' id='logo'>Start-Ups & Projects</a></li>");
+        $("#nav2 ul").append("<li id='li2'>&nbsp;&nbsp;<a href='visualize.html' id='logo'>Visualizations</a></li>");
+        $("#nav2 ul").append("<li id='li3'>&nbsp;&nbsp;<a href='publish.html' id='logo'>Publications</a></li>");
+    
+   }, mouseleave: function () {
+
+      timer=setTimeout(function(){
+    $("#li1").fadeOut(2300, function(){ $(this).remove(); })
+    $("#li2").fadeOut(2000, function(){ $(this).remove(); })
+    $("#li3").fadeOut(1700, function(){ $(this).remove(); })
+    }, 0);
+
+
+       }})
+       
+    </script>
+
+
+   
 
  </body>
 </div>
