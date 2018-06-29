@@ -452,7 +452,7 @@ var update_point_pos  = function() {
 
   // # Update points
   svg.selectAll(".circle").remove()
-  update_second_new = Math.max(update_second_new-80,500)
+  update_second_new = Math.max(update_second_new-80,400)
   draw_vis()
   setTimeout(update_point_pos, update_second_new);
 
