@@ -59,35 +59,7 @@
               <br>
               <br>
               <br>
-<!--               <p><p><h3>
-              <strong>Startups</strong></h3></p>
 
-              <p><p><img src="./images/papero.png" style="width:40px;height:40px;"/> 
-              <strong><span></span>Papero</strong> (Digital Media Startup &nbsp;| &nbsp;Co-Founder) [Now <a href="https://www.pie.video/" target="_blank" > Pie</a>]
-              </p>
-              Creating digital conversation spaces for friends and teams.<br><br>
-              > <a href="http://www.papero.co/" target="_blank"> Homepage</a><br>
-              > <a href="https://www.youtube.com/watch?v=3F8ou5m3ZPw&feature=youtu.be" target="_blank"> Demo</a><br><br>
-              
-              <p><p><img src="./images/secondgo.png" style="width:40px;height:40px;"/> 
-              <strong><span></span>SecondGo</strong> (Social Enterprise Startup &nbsp;|&nbsp; Founding Team Member)
-              </p>
-              Unlocking the power of education through exchange.<br><br>
-              > <a href="https://www.youtube.com/watch?time_continue=4&v=vAlnZlm9uig" target="_blank"> Demo</a><br>
-              > <a href="https://www.youtube.com/watch?v=OOuCqihYOV4" target="_blank"> TedX Talk</a> 
-
-              <br><br><br><p><p><h3>
-              <strong>Other Projects</strong></h3></p>
-
-              <p><p><img src="./images/idc.png" style="width:40px;height:40px;"/>
-              <strong><span></span>IDC 2013</strong> (International Development Conference &nbsp;| &nbsp;President)
-              </p>
-              Student-run conference bringing students into contact with those working at the forefront of international development.<br><br>
-              > <a href="http://www.camidc.org.uk/camidc-2013.html" target="_blank"> Homepage</a><br>
-              > <a href="http://www.camidc.org.uk/camidc-2013---the-movie.html" target="_blank"> Promotional Video</a> 
-              
-
-          </p>--> 
           </section> 
           
           <section id="banner">
@@ -97,8 +69,7 @@
               <ul class="menu">
                <li> <a href="http://linkedin.com/in/claramarquardt/" target="blank" title="LinkedIn">LinkedIn <i class="fa fa-linkedin-square"></i></a></li>
                 <li><a href="http://github.com/claramarquardt" target="blank" title="Github">GitHub <i class="fa fa-github"></i></a></li>
-<!--                 <li> <a href="https://bl.ocks.org/claramarquardt" target="blank" title="Bl.ocks">Bl.ocks <i class="fa fa-th-large"></i></a></li>
- -->                </ul>
+              </ul>
             </p>
 
           </font>
@@ -114,18 +85,15 @@
           mouseenter: function () {
           $("#li1").remove()
           $("#li2").remove()    
-          $("#li3").remove()
 
-        $("#nav2 ul").append("<li id='li1'>&nbsp;&nbsp;<a href='build.html' id='logo'>Start-Ups & Projects</a></li>");
-        $("#nav2 ul").append("<li id='li2'>&nbsp;&nbsp;<a href='visualize.html' id='logo'>Visualizations</a></li>");
-        $("#nav2 ul").append("<li id='li3'>&nbsp;&nbsp;<a href='publish.html' id='logo'>Publications</a></li>");
+        $("#nav2 ul").append("<li id='li1'>&nbsp;&nbsp;<a href='visualize.html' id='logo'>Visualizations</a></li>");
+        $("#nav2 ul").append("<li id='li2'>&nbsp;&nbsp;<a href='build.html' id='logo'>Hacks & Side Projects</a></li>");
     
    }, mouseleave: function () {
 
       timer=setTimeout(function(){
     $("#li1").fadeOut(2300, function(){ $(this).remove(); })
     $("#li2").fadeOut(2000, function(){ $(this).remove(); })
-    $("#li3").fadeOut(1700, function(){ $(this).remove(); })
     }, 0);
 
 

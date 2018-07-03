@@ -19,8 +19,8 @@ mouseover_event=false
 // # Labels
 count=0
 count_id=0
-label = ["Start-Ups & Projects", "Visualizations", "Publications"]
-label_url = ["build.html", "visualize.html", "publish.html"]
+label = ["Visualizations", "Hacks & Side Projects"]
+label_url = ["visualize.html", "build.html"]
 
 // # Data Structures
 point_pos_new         = []
@@ -188,7 +188,7 @@ var draw_vis  = function() {
         .style("stroke", "#575b5e")
         .attr("d", function(d,i) {return lineFunction(line_pos_new[i].ddd);})
 
-    if (count_gap>10 & Math.max(...line_pos_new_dist)>min_text & count_id<3) {
+    if (count_gap>10 & Math.max(...line_pos_new_dist)>min_text & count_id<2) {
     
     console.log(Math.max(...line_pos_new_dist))
     dist_max = line_pos_new_dist.indexOf(Math.max(...line_pos_new_dist))
