@@ -16,11 +16,12 @@ pos_y_start       = 200
 pos_random_factor_x = 200
 pos_random_factor_y = 300
 mouseover_event=false
+
 // # Labels
 count=0
 count_id=0
-label = ["Visualizations", "Hacks & Side Projects"]
-label_url = ["visualize.html", "build.html"]
+label = ["Visualizations", "Projects"]
+label_url = ["visualize.html", "visualize.html"]
 
 // # Data Structures
 point_pos_new         = []
