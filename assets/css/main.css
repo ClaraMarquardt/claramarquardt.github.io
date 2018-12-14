@@ -3153,7 +3153,7 @@
 /* Create four equal columns that floats next to eachother */
 .column_w {
   float: left;
-  width: 50%;
+  width: 45%;
 }
 
 .column_wn {
